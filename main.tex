@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage[table]{xcolor}
 \usepackage{tikz}
 \usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
 \usepackage{hyperref}
@@ -100,9 +101,57 @@ So, as part of our Software Engineering project, we decided to contact the compa
     \label{fig:Gantt}
 \end{figure}
 
-\subsection{Activity Network}
-\subsection{Staff Allocation}
-\subsection{Risk Analysis and Management}
+\subsection{Risk Management}
+
+\begin{tabular}{ |p{2.4cm}|p{1.7cm}|p{4.9cm}|p{2.15cm}|p{2cm}|p{2.2cm}|  }
+\hline
+\multicolumn{6}{|c|}{\textbf{\large Possible Software Risks}} \\
+\hline
+\textbf{Risks}&\textbf{Affects}&\textbf{Description}&\textbf{Probability}&\textbf{Effects}&\textbf{Type} \\
+\hline
+Team member falling ill&Project, Product&Staff might fall ill at critical times, and this will
+result in their part of the project being
+assigned to another team member. But this will increase the workload on him, and it might
+compromise on the quality of the product or
+the deadline.&Moderate&Tolerable&People\\
+Team member dropping the course&Project, Product&A member of the team may drop out of the
+course, and this will
+result in their part of the project being
+assigned to another team member. But this will increase the workload on him, and it might
+compromise on the quality of the product or
+the deadline.&Low&Serious&People\\
+Time management problems with other courses&Project, Product&Some team members taking 12 or more credits, might find it difficult to manage their time, and therefore miss the deadlines.&Moderate&Serious&Estimation \\
+Candia Cameo going bankrupt&Business&The company might go bankrupt, and decide to drop the project without any further contact. This will result in us not being able to keep extracting requirements from the client&Low&Serious&Organization\\
+Disagreements between team members&Project, Product&Team members might come to disagreements when it comes to software design and implementation, which leads to conflict and wasting time.&Moderate&Tolerable&People\\
+EditorX shutting down&Product&The EditorX tool that we're going to use to develop the website, may shut down and no longer be available. This will result in team members not being able to implement the system.&Very Low&Catastrophic&Tools\\
+\hline
+\end{tabular}\\
+\\
+\begin{tabular}{ |p{7.675cm}|p{7.675cm}|  }
+\hline
+\multicolumn{2}{|c|}{\textbf{\large Contingency Plan}} \\
+\hline
+\textbf{Risks}&\textbf{Contingencey Plan} \\
+\hline
+Team member falling ill&The tasks that the ill team member was supposed to complete, will be divided on all other team members to complete.\\
+Team member dropping the course&The tasks that the team member who dropped the course was supposed to complete, will be divided on all other team members to complete.\\
+Time management problems with other courses&Increase the number of meetings between team members to ensure the tasks are being completed on time.\\
+Candia Cameo going bankrupt&Team members will act as the client to extract requirements.\\
+Disagreements between team members&Team leader should have the final word.\\
+ & \\
+EditorX shutting down&Team members should resort to writing code from scratch.\\
+\hline
+\end{tabular}
+\subsection{Resource List and Cost Estimate}
+\begin{itemize}
+  \item Draw.io
+  \item MySql Workbench
+  \item Projectmanager.com
+  \item LaTex
+  \item Google docs
+\end{itemize}
+
+Cost estimates: 0\$
 \section{Software Requirements}
 \subsection{Functional User Requirements}
 
@@ -823,7 +872,6 @@ So, as part of our Software Engineering project, we decided to contact the compa
 \\
 \textbf{Other activities:} the user clicked on multiple sections multiple times.\\
 \textbf{System State on completion:} : the user is redirected to a subsection and after that to the product.
-
 \end{minipage}}\\
 \vspace{1cm}
 \\
@@ -1062,7 +1110,6 @@ The admin might make a mistake while inserting the model’s picture or video th
 \section{Client's Business}
 \subsection{Before}
 \subsection{After}
-\section{Resource List}
 \section{Signatures}
 \section{Index}
 \end{document}
